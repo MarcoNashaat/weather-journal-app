@@ -25,8 +25,8 @@ function appFunction(){
 
         try {
             //turning data into json data
-            await response.json();
-            console.log(response);
+            const data=await response.json();
+            console.log(data);
            
         
            
@@ -49,7 +49,7 @@ function appFunction(){
 
         try {
             const recievedData=await response.json();
-            return recievedData;
+            console.log(recievedData);
         } catch (error) {
             console.log(error)
         }
