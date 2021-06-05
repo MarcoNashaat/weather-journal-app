@@ -36,18 +36,22 @@ app.use(express.static('website'));
 app.get('/getRoute',getCallback())
 //get function
 function getCallback(req,res){
+   
     res.send(projectData);
+    
     console.log(projectData);
 }
 
 //setting up a post route
 app.post('/postRoute',postCallback())
-//get function
+//post function
+
 function postCallback(request,response){
+    let data=request.body;
     newData={
-        temperature:request.body.temperature,
-        date:request.body.date,
-        userResponse:request.body.userResponse
+        temperature:data.temperature,
+        date:data.date,
+        content:data.content
     }
 
     projectData.push(newData);
