@@ -1,5 +1,5 @@
 /* Global Variables */
-const key='f4d693f0f3b21ac778a9e47c00bb241f'
+const key='' //enter personal api key
 
 
 // Create a new date instance dynamically with JS
